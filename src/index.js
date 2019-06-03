@@ -1,1 +1,1 @@
-console.log("pepe" + " papa");
+export * from "./Spinner";
