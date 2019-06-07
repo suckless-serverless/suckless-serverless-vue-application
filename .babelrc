@@ -11,5 +11,11 @@
       }
     ],
     "vue"
-  ]
+  ],
+   "env":{
+    "test":{
+      "presets": ["@babel/env", "vue"]
+    }
+  }
+
 }
