@@ -1,7 +1,9 @@
 <template>
   <div @click="click">
-    <img alt="Vue logo" height="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" />
+    <img alt="Vue logo" :class="cssClass" height="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" />
     {{ name }} => {{ number}}
+
+    <div v-if="number==3" class="container">container</div>
   </div>
 </template>
 
@@ -13,6 +15,13 @@ export default {
     return {
       name: 'pepe',
       number: 0
+    }
+  },
+  computed: {
+    cssClass () {
+      return {
+        'full-width': (this.number === 0)
+      }
     }
   },
   methods: {
@@ -31,5 +40,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.full-width{
+  border-width: medium;
+  border-color: red;
 }
 </style>

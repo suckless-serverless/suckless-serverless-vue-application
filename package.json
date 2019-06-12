@@ -6,9 +6,10 @@
   "module": "dist/bundle.ems.js",
   "sideEffects": false,
   "scripts": {
-    "prebuild": "rimraf dist",
+    "oprebuild": "rimraf dist",
     "build": "rollup -c",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -41,6 +42,7 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
+    "arrive": "^2.4.1",
     "vue": "^2.6.10"
   },
   "jest": {
