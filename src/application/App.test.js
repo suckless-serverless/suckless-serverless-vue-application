@@ -23,7 +23,7 @@ describe('App.test.js', () => {
   })
 
   it('click event', () => {
-    const container = wrapper.find('div')
+    const container = wrapper.find('button')
     container.trigger('click')
     expect(vm.$el).toMatchSnapshot()
   })

@@ -8,9 +8,14 @@ exports[`App.test.js click event 1`] = `
     height="200px"
     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png"
   />
+   
+  <button>
+    Click Me
+  </button>
   
-  pepe =&gt; 2
-
+  Number of clicks =&gt; 2
+  
+  <!---->
 </div>
 `;
 
@@ -22,8 +27,13 @@ exports[`App.test.js has the expected html structure 1`] = `
     height="200px"
     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png"
   />
+   
+  <button>
+    Click Me
+  </button>
   
-  pepe =&gt; 1
-
+  Number of clicks =&gt; 1
+  
+  <!---->
 </div>
 `;

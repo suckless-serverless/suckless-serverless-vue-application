@@ -1,9 +1,9 @@
 <template>
-  <div @click="click">
+  <div >
     <img alt="Vue logo" :class="cssClass" height="200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" />
-    {{ name }} => {{ number}}
-
-    <div v-if="number==3" class="container">container</div>
+    <button @click="click">Click Me</button>
+    {{ name }} => {{ number }}
+    <div v-if="number>2" class="container"></div>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   name: 'App',
   data () {
     return {
-      name: 'pepe',
+      name: 'Number of clicks',
       number: 0
     }
   },
