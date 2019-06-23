@@ -1,5 +1,5 @@
 {
-  "name": "modvue",
+  "name": "suckless-serverless-vue-application",
   "version": "1.0.0",
   "description": "",
   "main": "dist/bundle.cjs.js",
@@ -38,11 +38,11 @@
     "rollup-plugin-node-resolve": "^5.0.1",
     "rollup-plugin-terser": "^5.0.0",
     "rollup-plugin-vue": "^5.0.0",
+    "suckless-serverless": "^1.0.1",
     "vue-jest": "^3.0.4",
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "arrive": "^2.4.1",
     "vue": "^2.6.10"
   },
   "jest": {
